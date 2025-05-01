@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    background-color: hsl(235, 21%, 11%);
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    background-image: url(images/bg-desktop-dark.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 230px;  
+    z-index: 1;
+}
+
+.textTop>.flex {
+    justify-content: space-between;
+    align-items: baseline;
+}
+.textTop img{
+    cursor: pointer;
+}
+
+section.mainBox,.textTop {
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.textTop {
+    top:50px;
+    height: 200px;
+    width: 100%;
+    max-width: 450px;
+    color: hsl(236, 33%, 92%);
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.circulo, #addbotao {
+    width: 20px;
+    height: 20px;
+    border: 2px solid hsl(237, 14%, 26%);
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.circulo:hover{
+    border: 2px solid hsl(246, 87%, 65%);
+}
+.marcado{
+    background: linear-gradient(120deg,hsl(192, 100%, 67%), hsl(280, 87%, 65%)), url(images/icon-check.svg);
+    background-position: center;
+    background-size: 100%,80%;
+    background-repeat: no-repeat;
+    background-blend-mode:color;
+}
+.new,.tarefa {
+    padding: 15px;
+    color: hsl(235, 19%, 35%);
+}
+
+.new,.todoList {
+    border-radius: 6px;
+    background-color: hsl(235, 24%, 19%);
+    -webkit-box-shadow: 2px 10px 17px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 10px 17px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 10px 17px -4px rgba(0, 0, 0, 0.75);
+   
+}
+.new input#add{
+    font-size: 18px;
+    border: 0;
+    background-color:transparent;
+    width: 90%;
+}
+.new input:focus{
+    outline: 0;
+    color: hsl(235, 19%, 35%);
+    background-color: transparent;
+}
+.todoList {
+    width: 100%;
+    height: 350px;
+    margin-top: 35px;
+}
+
+.tarefa {
+    border-bottom: 1px solid rgb(70 72 84);
+    font-weight: 500;
+    display: block;
+}
+.tarefa h3{
+    font-weight: normal;
+}
+.tarefa span{
+    margin-left: auto;
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}
+.excluir{
+    background-image: url(images/icon-cross.svg);
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    cursor: pointer;
+}
+.opcoes {
+    color: hsl(233, 14%, 35%);
+    font-size: 13px;
+    padding: 15px;
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.opcoes h4 {
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.opcoes span {
+    margin-right: 5px;
+}
+
+.instrucoes {
+    margin-top: 50px;
+    text-align: center;
+    color: hsl(234, 11%, 52%);
+}
+.background, .textTop img, .new, main, .todoList, .tarefa, .instrucoes, .opcoes, .circulo{
+    transition: 1s;
+}
+.escolhido{
+    color: hsl(220, 98%, 61%);
+ }
+@media screen and (max-width:500px){
+    section.mainBox{
+        padding: 0 2%;
+    }
+    .textTop{
+        padding: 0 2%;
+    }
+    section.mainBox,.textTop {
+        width: 100%;
+        max-width: none;
+    }
+
+}
