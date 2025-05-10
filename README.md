@@ -40,7 +40,8 @@ Os usuários devem ser capazes de:
 ### Links
 
 - Repositório: [GitHub](https://github.com/dhBarankievicz/frontend-mentor-Todo-App)
-
+- Ver no GitHub Pages: (https://dhbarankievicz.github.io/frontend-mentor-Todo-App/)
+  
 ---
 
 ## Meu processo
